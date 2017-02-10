@@ -13,6 +13,9 @@ Vagrant.configure(2) do |config|
      dnf install -v -y gcc ruby-devel libxml2 libxml2-devel libxslt libxslt-devel libcurl-devel patch rpm-build
      dnf install -v -y git make
      dnf install -v -y words
+     dnf install -v -y nc telnet
+     dnf install -v -y php-pear-XML-Parser
+     dnf update -v -y libnghttp2
      #
      # Back off selinux
      setenforce Permissive
